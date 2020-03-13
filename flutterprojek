@@ -11,7 +11,7 @@ class DataApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
+      backgroundColor: Colors.black,
       appBar: new AppBar(
         backgroundColor: Colors.blue,
         title: Text("BIODATA"),
@@ -20,7 +20,12 @@ class DataApp extends StatelessWidget {
           Icons.exit_to_app,
           color: Colors.black,
         ),
-        actions: <Widget>[Icon(Icons.email,color: Colors.black,)],
+        actions: <Widget>[
+          Icon(
+            Icons.email,
+            color: Colors.black,
+          )
+        ],
       ),
       body: Center(
         child: Column(
@@ -53,7 +58,7 @@ class DataApp extends StatelessWidget {
                 ),
               ),
               Text(
-                "Pendidikan Teknik Informatika",
+                "PTI",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -61,7 +66,7 @@ class DataApp extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: EdgeInsets.only(top: 40.0),
+                margin: EdgeInsets.only(top: 20.0,bottom: 15),
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -73,12 +78,12 @@ class DataApp extends StatelessWidget {
                               Icon(
                                 Icons.my_location,
                                 size: 110,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                               Text(
                                 'Singaraja',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 17.0,
                                   height: 2.0,
                                   fontWeight: FontWeight.bold,
@@ -101,12 +106,12 @@ class DataApp extends StatelessWidget {
                               Icon(
                                 Icons.home,
                                 size: 110,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                               Text(
                                 'Kubutambahan',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 17.0,
                                   height: 2.0,
                                   fontWeight: FontWeight.bold,
@@ -119,7 +124,7 @@ class DataApp extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: EdgeInsets.only(top: 10.0),
+                margin: EdgeInsets.only(),
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -172,7 +177,71 @@ class DataApp extends StatelessWidget {
                               )
                             ],
                           )),
+                    ),
+                    Expanded(
+                      child: Card(
+                          color: Colors.blueAccent,
+                          margin: EdgeInsets.only(
+                            left: 10.0,
+                            right: 10.0,
+                            top: 10.0,
+                            bottom: 10.0,
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Icon(
+                                Icons.school,
+                                size: 110,
+                                color: Colors.black,
+                              ),
+                              Text(
+                                'SMAN 1 KBT',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 17.0,
+                                  height: 2.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )),
                     )
+                  ],
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.only(top: 0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Card(
+                          color: Colors.blueAccent,
+                          margin: EdgeInsets.only(
+                            left: 10.0,
+                            right: 10.0,
+                            top: 10.0,
+                            bottom: 10.0,
+                          ),
+                          child: Column(
+                            children: <Widget>[
+                              Icon(
+                                Icons.games,
+                                size: 50,
+                                color: Colors.black,
+                              ),
+                              Text(
+                                'All Games',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 17.0,
+                                  height: 2.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          )),
+                    ),
+
                   ],
                 ),
               ),
